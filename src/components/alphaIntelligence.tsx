@@ -45,15 +45,15 @@ const AlphaIntelligence: React.FC = () => {
           {data.map((item: any, index: any) => {
             const { banner_image, title, summary, url } = item;
             return (
-              <div className="w-full border-[2px] border-solid border-[#dedede] rounded-[5px] p-[10px] flex justify-start items-start gap-[20px]">
-                <div className="w-[35%] h-[135px]">
+              <div className="w-full border-[2px] border-solid border-[#dedede] rounded-[5px] p-[10px] flex justify-start items-start gap-[20px] md:flex-col">
+                <div className="w-[35%] h-[135px] md:w-full md:h-full">
                   <img
                     src={banner_image}
                     alt={banner_image}
                     className="w-full h-full"
                   />
                 </div>
-                <div className="w-[70%]">
+                <div className="w-[70%] md:w-full">
                   <h1 className="whitespace-nowrap overflow-hidden overflow-ellipsis w-full text-xl font-semibold m-0">
                     {title}
                   </h1>
