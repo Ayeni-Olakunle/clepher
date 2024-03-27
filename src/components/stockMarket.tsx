@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import stockImage from "../asset/stock.jpg";
+import forex2 from "../asset/forex2.jpg";
 import CoreTimeSeries from "./coreTimeSeries";
 import AlphaIntelligence from "./alphaIntelligence";
 import FundamentalData from "./FundamentalData";
@@ -12,10 +12,10 @@ export default function StockMarket() {
   };
   return (
     <section className="w-full flex justify-start items-start h-screen overflow-hidden">
-      <div className="w-[40%]">
-        <img src={stockImage} alt={stockImage} className="w-full" />
+      <div className="w-[40%] md:hidden">
+        <img src={forex2} alt={forex2} className="w-full" />
       </div>
-      <div className="w-[60%] overflow-y-scroll h-screen">
+      <div className="w-[60%] overflow-y-scroll h-screen md:w-full">
         <h1 className="text-center text-[22px] font-medium m-[10px]">
           Alpha Vantage API Documentation
         </h1>
@@ -26,7 +26,7 @@ export default function StockMarket() {
           Commodities, (6) Economic Indicators, and (7) Technical Indicators
         </p>
 
-        <div className="flex justify-around items-center mt-[20px] px-[10px] py-[0]">
+        <div className="flex justify-around items-center mt-[20px] px-[10px] py-[0] md:overflow-scroll md:justify-start md:items-center md:gap-[20px]">
           <button
             className={
               count === 0
