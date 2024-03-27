@@ -41,8 +41,8 @@ const FundamentalData: React.FC = () => {
           Fundamental Data
         </h1>
 
-        <div className="flex justify-between items-start gap-[20px] w-full">
-          <div className="w-[45%] border-[1.5px] border-solid border-[lightgrey] rounded-[5px]">
+        <div className="flex justify-between items-start gap-[20px] w-full md:flex-col">
+          <div className="w-[45%] border-[1.5px] border-solid border-[lightgrey] rounded-[5px] md:w-full">
             <h1 className="text-[17px] font-bold text-[green] mx-[0] my-[10px] text-center">
               Top Gainers
             </h1>
@@ -61,7 +61,7 @@ const FundamentalData: React.FC = () => {
               );
             })}
           </div>
-          <div className="w-[45%] border-[1.5px] border-solid border-[lightgrey] rounded-[5px]">
+          <div className="w-[45%] border-[1.5px] border-solid border-[lightgrey] rounded-[5px] md:w-full">
             <h1 className="text-[17px] font-bold text-[#9c3030] mx-[0] my-[10px] text-center">
               Top Losers
             </h1>
